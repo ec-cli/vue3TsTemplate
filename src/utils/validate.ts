@@ -1,0 +1,19 @@
+/*
+ * @Description: file content
+ * @Author: rk
+ * @Date: 2022-12-07 17:42:30
+ */
+export const isExternal = (path: string) => {
+  const reg = /^(https?:|mailto:|tel:)/
+  return reg.test(path)
+}
+
+export function checkPhoneNumber(rule: any, value: any, callback: any) {
+  const regexp = /^(((13[0-9]{1})|(15[0-9]{1})|(16[0-9]{1})|(17[3-8]{1})|(18[0-9]{1})|(19[0-9]{1})|(14[5-7]{1}))+\d{8})$/;
+  if (value === "") callback("请输入手机号码");
+  if (!regexp.test(value)) {
+    callback(new Error("请输入正确的手机号码"));
+  } else {
+    return callback();
+  }
+}

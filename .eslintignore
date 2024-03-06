@@ -1,0 +1,10 @@
+<!--
+ * @Description: file content
+ * @Author: rk
+ * @Date: 2022-12-02 18:12:41
+-->
+
+# eslint 忽略检查
+
+node_modules
+dist

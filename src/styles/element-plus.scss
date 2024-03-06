@@ -1,0 +1,38 @@
+html.dark {
+    .navigation-bar {
+        background: var(--el-bg-color) !important;
+    }
+    .tags-view-container {
+        background: var(--el-bg-color) !important;
+        border-bottom: 1px solid #4b4d4f !important;
+        box-shadow: 0 1px 3px 0 #4b4d4f, 0 0 3px 0 #4b4d4f !important;
+        .tags-view-item {
+            border: 1px solid #4b4d4f !important;
+            color: #fff !important;
+            background: var(--el-bg-color) !important;
+            &.active {
+                color: #3f81fe !important;
+                &::before {
+                    background: #3f81fe !important;
+                }
+            }
+        }
+        // .scroll-container {
+        //     .arrow {
+        //         &.left {
+        //             box-shadow: 5px 0 5px -6px #fff !important;
+        //         }
+        //         &.right {
+        //             box-shadow: -5px 0 5px -6px #fff !important;
+        //         }
+        //     }
+        // }
+    }
+    img {
+        filter: brightness(0.8) saturate(1.25) !important;
+    }
+    .headerStyle {
+        background: #141414 !important;
+        color: #fff !important;
+    }
+}

@@ -1,0 +1,62 @@
+// 全局css变量
+@import "./variables.css";
+@import "./element-plus.scss";
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial,
+        sans-serif;
+}
+
+#app {
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a,
+a:focus,
+a:hover {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+
+div:focus {
+    outline: none;
+}
+
+// 主页面
+.app-container {
+    padding: 20px;
+}
+// 分页
+.pager-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+// 表格头部统一设置样式
+.headerStyle {
+    background: #f8f8f9 !important;
+    color: #515a61 !important;
+}
+// 表格暂无数据样式
+.empty-data {
+    margin: 30px auto 8px;
+    display: block;
+}
+.data-desc {
+    line-height: 22px;
+    font-size: 12px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,7 @@
+
+# prettier 忽略检查
+
+node_modules
+dist
+*.local
+*.d.ts

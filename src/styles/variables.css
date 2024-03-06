@@ -1,0 +1,37 @@
+/** 全局 css 变量，这种变量不仅可以在css和scss中使用，还可以导入到 js 中使用*/
+
+:root {
+
+    /** Header区域高度 = NavigationBar组件 + TagsView组件 */
+    --fp-header-height: calc(var(--fp-navigationbar-height) + var(--fp-tagsview-height));
+
+    /** NavigationBar区域高度 */
+    --fp-navigationbar-height: 50px;
+
+    /** Sidebar*/
+    --fp-sidebar-menu-bg-color: #141414;
+    --fp-sidebar-menu-text-color: #c0c4cc;
+    --fp-sidebar-menu-active-text-color: #fff;
+    --fp-sidebar-menu-tip-line-bg-color: var(--el-color-primary);
+    --fp-sidebar-menu-item-height: 60px;
+    --fp-sidebar-menu-hover-bg-color: #ffffff10;
+    --fp-sidebar-width: 220px;
+    --fp-sidebar-hide-width: 58px;
+    
+
+    /** SidebarLogo 组件*/
+    --fp-sidebarlogo-bg-color: #141414;
+
+    /** TagsView组件 */
+    --fp-tagsview-height: 34px;
+    --fp-tagsview-tag-border-color: #d8dce5;
+    --fp-tagsview-tag-border-radius: 2px;
+    --fp-tagsview-tag-text-color: #495060;
+    --fp-tagsview-tag-bg-color: #fff;
+    --fp-tagsview-tag-active-bg-color: var(--el-color-primary);
+    --fp-tagsview-tag-active-text-color: #fff;
+    --fp-tagsview-tag-active-border-color: var(--el-color-primary);
+    --fp-tagsview-tag-active-before-color: #ffffff;
+    --fp-tagsview-tag-icon-hover-bg-color: #00000030;
+    --fp-tagsview-tag-icon-hover-color: #ffffff;
+}
